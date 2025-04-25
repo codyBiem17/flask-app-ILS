@@ -20,6 +20,11 @@ def get_time():
 def get_env():
     env_vars = {key: value for key, value in os.environ.items()}
     return jsonify(env_vars)
+    
+ # New endpoint: /status
+@app.route('/status', methods=['GET'])
+def get_status():
+    return jsonify({"status": "ok", "message": "API is running"})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

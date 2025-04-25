@@ -1,4 +1,4 @@
-# flask-app
+# A Python flask-app
 
 # Steps to Create an AWS CodeBuild Project
 Step 1: Log in to AWS Management Console
